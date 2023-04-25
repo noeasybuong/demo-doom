@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="backGround">
+    <script src="main.js"></script>
+
+    <p name="Text">Đoạn văn 1</p>
+    <p name="Text">Đoạn văn 2</p>
+    <p name="Text">Đoạn văn 3</p>
+
+
+    <script>
+
+        //bai 1
+        function changeColor() {
+            let array = document.getElementsByName('Text');
+            array[0].style.color = 'green';
+            array[1].style.color = 'yellow';
+            array[2].style.color = 'red';
+        }
+        changeColor();
+
+
+        //bai 2
+
+        function changeBgColor() {
+            document.getElementById('backGround').style.background = "light";
+
+
+        }
+        changeBgColor();
+
+        // //bai 3
+        // copyContent(,) {
+
+
+        // }
+
+    </script>
+
+
+</body>
+
+</html>
