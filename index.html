@@ -22,9 +22,12 @@
         //bai 1
         function changeColor() {
             let array = document.getElementsByName('Text');
-            array[0].style.color = 'green';
-            array[1].style.color = 'yellow';
-            array[2].style.color = 'red';
+            let color = ['blue', 'red', 'yellow'];
+
+            for (let i = 0; i < array.length; i++) {
+                array[i].style.color = color[i];
+            }
+
         }
         changeColor();
 
@@ -41,8 +44,12 @@
         // //bai 3
 
         function copyContent(paragraph1, paragraph2) {
-            document.getElementById(paragraph1).innerHTML = 'Đoạn văn 2';
-            document.getElementById(paragraph2).innerHTML = 'Đạon văn 1';
+
+            let text1 = document.getElementById(paragraph2).innerHTML;
+            let text2 = document.getElementById(paragraph1).innerHTML;
+            document.getElementById(paragraph1).innerHTML = text1;
+            document.getElementById(paragraph2).innerHTML = text2;
+
 
         }
 
@@ -50,20 +57,20 @@
         copyContent('text1', 'text2');
         //bai 4
 
-        // function changeFontSize (x) {
-        //     document.getElementsByTagName("p")[0].style.fontSize = x;
-        //     document.getElementsByTagName("p")[1].style.fontSize = x;
-        //     document.getElementsByTagName("p")[2].style.fontSize = x;
-        // }
-        // changeFontSize('30')
-
-
-        function changeFontSize() {
-            document.getElementById('text1').setAttribute("id", "text1");
-            document.getElementById('text2').setAttribute("id", "text1");
-            document.getElementById('text3').setAttribute("id", "text1");
+        function changeFontSize(x) {
+            document.getElementsByTagName("p")[0].style.fontSize = x;
+            document.getElementsByTagName("p")[1].style.fontSize = x;
+            document.getElementsByTagName("p")[2].style.fontSize = x;
         }
-        changeFontSize();
+        changeFontSize('30px')
+
+
+        // function changeFontSize() {
+        //     document.getElementById('text1').setAttribute("id", "text1");
+        //     document.getElementById('text2').setAttribute("id", "text1");
+        //     document.getElementById('text3').setAttribute("id", "text1");
+        // }
+        // changeFontSize();
 
     </script>
 
