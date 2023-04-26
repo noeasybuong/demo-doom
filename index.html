@@ -10,71 +10,14 @@
 </head>
 
 <body id="backGround">
-    <script src="main.js"></script>
+
 
     <p id="text1" name="Text">Đoạn văn 1</p>
     <p id="text2" name="Text">Đoạn văn 2</p>
     <p id="text3" name="Text">Đoạn văn 3</p>
 
 
-    <script>
-
-        //bai 1
-        function changeColor() {
-            let array = document.getElementsByName('Text');
-            let color = ['blue', 'red', 'yellow'];
-
-            for (let i = 0; i < array.length; i++) {
-                array[i].style.color = color[i];
-            }
-
-        }
-        changeColor();
-
-
-        //bai 2
-
-        function changeBgColor() {
-            document.getElementsByTagName('body')[0].style.background = "tan";
-
-
-        }
-        changeBgColor();
-
-        // //bai 3
-
-        function copyContent(paragraph1, paragraph2) {
-
-            let text1 = document.getElementById(paragraph2).innerHTML;
-            let text2 = document.getElementById(paragraph1).innerHTML;
-            document.getElementById(paragraph1).innerHTML = text1;
-            document.getElementById(paragraph2).innerHTML = text2;
-
-
-        }
-
-
-        copyContent('text1', 'text2');
-        //bai 4
-
-        function changeFontSize(x) {
-            document.getElementsByTagName("p")[0].style.fontSize = x;
-            document.getElementsByTagName("p")[1].style.fontSize = x;
-            document.getElementsByTagName("p")[2].style.fontSize = x;
-        }
-        changeFontSize('30px')
-
-
-        // function changeFontSize() {
-        //     document.getElementById('text1').setAttribute("id", "text1");
-        //     document.getElementById('text2').setAttribute("id", "text1");
-        //     document.getElementById('text3').setAttribute("id", "text1");
-        // }
-        // changeFontSize();
-
-    </script>
-
-
+    <script src="main.js"></script>
 </body>
 
 </html>
