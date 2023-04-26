@@ -41,13 +41,13 @@
         // //bai 3
 
         function copyContent(paragraph1, paragraph2) {
-            document.getElementById('text1').innerHTML = paragraph1;
-            document.getElementById('text2').innerHTML = paragraph2;
+            document.getElementById(paragraph1).innerHTML = 'Đoạn văn 2';
+            document.getElementById(paragraph2).innerHTML = 'Đạon văn 1';
 
         }
 
 
-        copyContent('Đoạn văn 2', 'Đoạn văn 1');
+        copyContent('text1', 'text2');
         //bai 4
 
         // function changeFontSize (x) {
