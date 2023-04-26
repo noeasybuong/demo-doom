@@ -50,12 +50,21 @@
         copyContent('Đoạn văn 2', 'Đoạn văn 1');
         //bai 4
 
-        function changeFontSize(x) {
-            document.getElementsByTagName("p")[0].style.fontSize = x;
-            document.getElementsByTagName("p")[1].style.fontSize = x;
-            document.getElementsByTagName("p")[2].style.fontSize = x;
+        // function changeFontSize (x) {
+        //     document.getElementsByTagName("p")[0].style.fontSize = x;
+        //     document.getElementsByTagName("p")[1].style.fontSize = x;
+        //     document.getElementsByTagName("p")[2].style.fontSize = x;
+        // }
+        // changeFontSize('30')
+
+
+        function changeFontSize() {
+            document.getElementById('text1').setAttribute("id", "text1");
+            document.getElementById('text2').setAttribute("id", "text1");
+            document.getElementById('text3').setAttribute("id", "text1");
         }
-        changeFontSize('30')
+        changeFontSize();
+
     </script>
 
 
